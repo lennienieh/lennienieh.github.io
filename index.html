@@ -188,15 +188,18 @@ body.parentNode.style.overflow = body.style.overflow = 'hidden';
                         <div class="work-exp-list__point"><i class="work-exp-list__point__ico"></i>2014/10</div>
                         <section class="work-exp-list__company clearfix">
                             <header class="work-exp-list__company__header">
-                                <a href="http://www.56.com/" target="_blank" class="work-exp-list__company__header__logo"><img src="images/56-logo.png" alt="上海雍马投资管理有限公司" /></a>
+                                <a href="#" target="_blank" class="work-exp-list__company__header__logo">
+                                  <!-- <img src="images/56-logo.png" alt="上海雍马投资管理有限公司" /> -->
+                                </a>
                                 <h4 class="work-exp-list__company__header__title">
-								<a style="color: #f53638;" href="http://www.56.com/" target="_blank">上海雍马投资管理有限公司</a>
+								<a style="color: #f53638;" href="#" target="_blank">上海雍马投资管理有限公司</a>
 							</h4>
                                 <p class="work-exp-list__company__header__jobtitle">前端开发工程师</p>
                             </header>
                             <div class="work-exp-list__company__body content">
                                 <p>负责JS开发。<strong>与产品经理对金融板块宣传H5、app Webview设计页面</strong>，开发app端嵌入Webview，静态页面以及与后台接口调用。</p>
                                 <p>此外，还在团队中担任<strong>产品经理</strong>的角色，与金融第三方客户沟通页面布局功能点探讨，P2P网站制作以及公司企业官网制作。</p>
+                                <p>公司由于经营不善已关闭</p>
                             </div>
                         </section>
                     </div>
@@ -214,33 +217,6 @@ body.parentNode.style.overflow = body.style.overflow = 'hidden';
                     <section class="project clearfix">
                         <div class="project__intro">
                             <header class="project__intro__header clearfix">
-                                <h4 class="project__intro__header__title">邻里邻外Webview</h4>
-                                <ul class="tech-tag-list not-for-print">
-                                  <li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
-                                    <li class="tech-tag-list__item tech-tag-list__item-javascript">Jquery</li>
-                                    <li class="tech-tag-list__item tech-tag-list__item-nodejs">Angular.js</li>
-                                    <li class="tech-tag-list__item tech-tag-list__item-html">HTML 5</li>
-                                    <li class="tech-tag-list__item tech-tag-list__item-css">CSS 3</li>
-                                </ul>
-                                <p class="project__intro__header__period">2017/3 至今</p>
-                            </header>
-                            <div class="content">
-                                <p>该项目是专注于无锡市用户显示页面，需要在地址栏勾选无锡市</p>
-                                <p>该项目完成代码工作100%都本人编写完成，前端框架选用<strong>AngularJs</strong>，包含<strong>Jquery</strong>和一些通用性较强的<strong>H5新属性</strong>、UI组件选用<strong>Bootstrap</strong>。此外还有js代码构建fis3，用于<strong>构建代码</strong>和<strong>压缩javascript代码</strong>。实现在h5端用户可以拨打电话，无需移动端ios，android重写代码，节省开发流程。</p>
-                                <p class="project__intro__links not-for-print">
-                                    <a href="#">项目演示前往应用中心下载邻里邻外app</a>
-                                    <!-- <a href="http://jraiser.org/" target="_blank">官方网站</a>
-                                    <a href="https://github.com/heeroluo/jraiser" target="_blank">项目地址</a> -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="project__thumb not-for-print">
-                            <img src="images/lllw.png" alt="Javascript类库JRaiser" />
-                        </div>
-                    </section>
-                    <section class="project clearfix">
-                        <div class="project__intro">
-                            <header class="project__intro__header clearfix">
                                 <h4 class="project__intro__header__title">武汉快泊停车微信公众号</h4>
                                 <ul class="tech-tag-list not-for-print">
                                     <li class="tech-tag-list__item tech-tag-list__item-html">HTML 5</li>
@@ -253,13 +229,21 @@ body.parentNode.style.overflow = body.style.overflow = 'hidden';
                                 <p class="project__intro__header__period">2015/4 至今</p>
                             </header>
                             <div class="content">
+                                <p>该项目本人担任前端工程师一职，完成该项目100%以上代码工作，从代码构建脚手架到与后台接口对接，页面样式修改。</p>
                                 <p>兼容主流移动浏览器及Webkit内核的PC浏览器。在微信中打开时会调用<strong>微信JSSDK</strong>的接口，在快泊停车APP中核心业务集成在微信公众号内。核心页面包括：</p>
                                 <ul class="list">
                                     <li>附近停车场：可以通过各种过滤条件搜寻附近的停车场。通过百度地图url api<strong>进行手机检测导航软件进行语音导航</strong>，并记录在URL参数中，即使页面刷新也不会丢失。</li>
-                                    <li>下单页：本页的业务流程有多个可选的子步骤，且数据交互逻辑较多，因此使用<strong>Vue</strong>进行开发。</li>
+                                    <li>停车缴费：本页的调用<strong>微信JSSD</strong>进行支付，已经进行账户余额支付。</li>
+                                    <li>个人中心：可以使用合作方被动支付功能，当用户离开停车场时微信推送消息，进行支付无需打开公众号H5页面进行支付，只需开启个人中心被动支付选项。</li>
+                                </ul>
+                                <hr>
+                                <p>使用的技术推荐</p>
+                                <ul class="list">
+                                  <li><a href="https://weui.io/">微信官方样式库</a></li>
+                                  <li>angular中使用百度地图推荐使用angular-BMap之类的库</li>
                                 </ul>
                                 <p class="project__intro__links not-for-print">
-                                    <a href="http://m.mdl.com/" target="_blank">在线地址</a>
+                                    <a href="#">在线地址：微信公众账号 湖北快泊或上海快泊</a>
                                 </p>
                             </div>
                         </div>
@@ -267,64 +251,58 @@ body.parentNode.style.overflow = body.style.overflow = 'hidden';
                             <img src="images/WechatKB.jpeg" alt="美黛拉H5站" />
                         </div>
                     </section>
-                    <section class="project project--nothumb clearfix">
+                    <section class="project clearfix">
                         <div class="project__intro">
                             <header class="project__intro__header clearfix">
-                                <h4 class="project__intro__header__title">Back2Front</h4>
+                                <h4 class="project__intro__header__title">邻里邻外Webview</h4>
                                 <ul class="tech-tag-list not-for-print">
-                                    <li class="tech-tag-list__item tech-tag-list__item-nodejs">Node.js</li>
+                                  <li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
+                                    <li class="tech-tag-list__item tech-tag-list__item-javascript">Jquery</li>
+                                    <li class="tech-tag-list__item tech-tag-list__item-nodejs">Angular.js</li>
+                                    <li class="tech-tag-list__item tech-tag-list__item-html">HTML 5</li>
+                                    <li class="tech-tag-list__item tech-tag-list__item-css">CSS 3</li>
                                 </ul>
-                                <p class="project__intro__header__period">2015/4 至今</p>
+                                <p class="project__intro__header__period">2017/2-2017/3</p>
                             </header>
                             <div class="content">
-                                <p>基于<strong>Express</strong>开发的<strong>前后端中间平台</strong>，工作原理是请求（HTTP GET）后端API获取数据，并通过<strong>XTemplate</strong>模板引擎渲染为HTML返回到浏览器。由于XTemplate也可以在浏览器端运行，所以还实现了<strong>前后端模板共用</strong>。</p>
-                                <p>该系统应用于美黛拉所有Web端产品，在服务器上通过<strong>PM2</strong>运行。</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="project project--nothumb clearfix">
-                        <div class="project__intro">
-                            <header class="project__intro__header clearfix">
-                                <h4 class="project__intro__header__title">前端代码构建工具</h4>
-                                <ul class="tech-tag-list not-for-print">
-                                    <li class="tech-tag-list__item tech-tag-list__item-nodejs">Node.js</li>
-                                </ul>
-                                <p class="project__intro__header__period">2015/4 至今</p>
-                            </header>
-                            <div class="content">
-                                <p>基于<strong>Gulp</strong>开发的<strong>代码构建</strong>命令行工具，构建流程包括：</p>
-                                <ul class="list">
-                                    <li>替换资源引用地址中的主机名为对应环境（测试环境、预发布环境或生产环境）的主机名；</li>
-                                    <li>压缩代码；</li>
-                                    <li>替换纯文本文件的换行符为LF；</li>
-                                    <li>在文件名中添加MD5戳并替换对应的引用路径。</li>
-                                </ul>
+                                <p>该项目本人担任前端工程师一职，完成该项目95%以上代码工作，从代码构建脚手架到与后台接口对接。</p>
+                                <p>该项目是专注于无锡市用户显示页面，需要在地址栏勾选无锡市</p>
+                                <p>该项目完成代码工作100%都本人编写完成，前端框架选用<strong>AngularJs</strong>，包含<strong>Jquery</strong>和一些通用性较强的<strong>H5新属性</strong>、UI组件选用<strong>Bootstrap</strong>。此外还有js代码构建fis3，用于<strong>构建代码</strong>和<strong>压缩javascript代码</strong>。实现在h5端用户可以拨打电话，无需移动端ios，android重写代码，节省开发流程。</p>
                                 <p class="project__intro__links not-for-print">
-                                    <a href="https://github.com/heeroluo/my-web-build" target="_blank">项目地址</a>
+                                    <a href="#">项目演示前往应用中心下载邻里邻外app</a>
                                 </p>
                             </div>
+                        </div>
+                        <div class="project__thumb not-for-print">
+                            <img src="images/lllw.png" alt="Javascript类库JRaiser" />
                         </div>
                     </section>
                     <section class="project clearfix">
                         <div class="project__intro">
                             <header class="project__intro__header clearfix">
-                                <h4 class="project__intro__header__title">56网HTML5视频上传</h4>
+                                <h4 class="project__intro__header__title">图灵微贷引擎PC端</h4>
                                 <ul class="tech-tag-list not-for-print">
                                     <li class="tech-tag-list__item tech-tag-list__item-html">HTML 5</li>
                                     <li class="tech-tag-list__item tech-tag-list__item-javascript">Javascript</li>
                                 </ul>
-                                <p class="project__intro__header__period">2013/3 至 2015/2</p>
+                                <p class="project__intro__header__period">2016/12-2017/1</p>
                             </header>
                             <div class="content">
-                                <p>通过<strong>XMLHttpRequest 2.0</strong>实现支持PC现代浏览器、<strong>移动浏览器</strong>的视频上传，且能实时显示上传进度和速度。</p>
-                                <p>后来进一步改良为<strong>断点续传</strong>，通过File类的slice方法把文件分块上传，并把上传进度记录在localStorage中。一旦上传中断，短时间内再上传同一个文件可以续传。</p>
+                                <p>该项目本人担任前端工程师一职，完成该项目80%以上代码工作，从代码构建脚手架到与后台接口对接。页面中所有涉及到的css样式都是本人完成，以及项目中所有效果都由本人完成。</p>
+                                <p>后台工作人员通过页面表单提交，来对用户的信用进行评分，也可用过word、excel，以及pdf的文档通过后台解析来进行用户信用评分。</p>
+                                <hr>
+                                <ul class="list">
+                                    <li>页面中所有的input、checkbox等一些输入框都不是页面写死，都是通过后台接口进行配置，连数据库中的某个表都是前端发送请求，后台通过接口进行创建。</li>
+                                    <li>大量使用css3，以及百度echarts图表，根据后台数据的在前端显示图表信息，以及年报显示。</li>
+                                    <li>由于项目中请求接口的地方众多，在js与css权衡下，尽量少使用js，样式效果均由css3完成，提高页面打开效率。</li>
+                                </ul>
                                 <p class="project__intro__links not-for-print">
-                                    <a href="http://upload.56.com/v/" target="_blank">在线地址</a>
+                                    <a href="http://139.224.44.215/" target="_blank">在线地址</a>
                                 </p>
                             </div>
                         </div>
                         <div class="project__thumb not-for-print">
-                            <img src="images/project-56upload.jpg" alt="56网HTML5视频上传" />
+                            <img src="images/turing.png" alt="56网HTML5视频上传" />
                         </div>
                     </section>
                     <section class="project clearfix not-for-print">
